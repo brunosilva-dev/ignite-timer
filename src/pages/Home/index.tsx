@@ -22,6 +22,7 @@ const newCycleFormValidationSchema = zod.object({
 //   minutesAmount: number;
 // }
 
+//Utilizando o zod para tipar as variaveis
 type NewCycleFormData = zod.infer<typeof newCycleFormValidationSchema>;
 
 export function Home() {
